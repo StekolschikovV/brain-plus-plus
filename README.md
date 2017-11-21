@@ -1,5 +1,5 @@
 
- [![BPP](https://github.com/StekolschikovV/brain-plus-plus/master/img/promo.png)](https://youtu.be/p3Q8oywXhl0)
+ [![BPP](https://raw.githubusercontent.com/StekolschikovV/brain-plus-plus/master/img/promo.png)](https://youtu.be/p3Q8oywXhl0)
 
  About:
  ===================
