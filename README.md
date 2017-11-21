@@ -1,22 +1,32 @@
 
-<!-- [![crab](https://raw.githubusercontent.com/StekolschikovV/crab/master/img/promo.png)](https://youtu.be/-hlMI1d_5_w) -->
+ [![BPP](https://github.com/StekolschikovV/brain-plus-plus/master/img/promo.png)](https://youtu.be/p3Q8oywXhl0)
 
-<!-- About: -->
-<!-- =================== -->
-<!-- Crab is an open source program designed to scrubbing and clean data from various sources. You can generate links to catalog, scrubbing links from catalogs to pages and get data in any format. Also you can use only one stage in data processing. In any case, everything will be absolutely free and open! -->
+ About:
+ ===================
+ The brain is an open source program that is created to help in the management of time.
 
-<!-- Project status: -->
-<!-- =================== -->
-<!-- Alpha. Bug fixing. -->
+ Project status:
+ ===================
+ Alpha. Bug fixing.
 
-<!-- Use: -->
-<!-- =================== -->
-<!-- - [Windows client ](https://github.com/StekolschikovV/crab/raw/master/dist/) -->
-<!-- - Linux client need to build. [Manual.](https://www.electron.build/) -->
-<!-- - Mac client need to build. [Manual.](https://www.electron.build/) -->
+ Features:
+ ===================
+ * task list
+ * task manager
+ * grouping tasks by tag
+ * description for task
+ * timer
+ * setting the timer and melody
+ * multilingualism
 
-<!-- Developers: -->
-<!-- =================== -->
-<!-- - Download  -->
-<!-- - npm i -->
-<!-- - npm run dev -->
+ Use:
+ ===================
+ - [Windows client ](https://github.com/StekolschikovV/brain-plus-plus/raw/master/Brain%2B%2B%20Setup%200.1.0.exe)
+ - Linux client need to build. [Manual.](https://www.electron.build/)
+ - Mac client need to build. [Manual.](https://www.electron.build/)
+
+ Developers:
+ ===================
+ - Download
+ - npm i
+ - npm run dev
