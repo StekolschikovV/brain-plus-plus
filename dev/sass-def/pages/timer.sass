@@ -1,0 +1,59 @@
+=semicircle($color, $rotate, $z-index, $display)
+  width: 100%
+  height: 100%
+  transform: rotate($rotate)
+  z-index: $z-index
+  position: absolute
+  display: $display
+  >div
+    width: 50%
+    height: 100%
+    border-radius: 100% 0 0 100% / 50% 0 0 50%
+    background: $color
+
+body
+  #pages
+    #timer
+      #round-containers
+        display: flex
+        justify-content: space-around
+        align-items: center
+        #work, #rest
+          border-radius: 50%
+          box-shadow: inset 0px 0px 0px 15px rgba(0, 0, 0, 1)
+          position: relative
+          .right-container
+            +semicircle(#FFFFFF, 180deg, 1, none)
+          .run-container
+            +semicircle(#FFFFFF, 0deg, 1, block)
+          .left-container
+            +semicircle(#000000, 0deg, 2, block)
+          .center
+            background: red
+            width: calc(100% - 10px)
+            height: calc(100% - 10px)
+            border-radius: 50%
+            position: absolute
+            left: 5px
+            top: 5px
+            z-index: 5
+            .time
+              position: absolute
+              left: 0
+              right: 0
+              top: 0
+              bottom: 0
+              margin: auto
+              width: 50px
+              height: 18px
+              text-align: center
+        #work
+          width: 50vw
+          height: 50vw
+        #rest
+          width: 30vw
+          height: 30vw
+      #timer-controls
+        text-align: center
+        button
+          margin: 50px 5px

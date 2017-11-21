@@ -1,0 +1,60 @@
+{
+  "name": "brain-plus-plus",
+  "productName": "Brain++",
+  "version": "0.1.0",
+  "description": "Application for personal effectiveness",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "concurrently --kill-others \"gulp watch\" \"electron .\"",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=dev/img/logo64.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Brain++\"",
+    "package-win-asar-falsh": "electron-packager . --overwrite --asar=falsh --platform=win32 --arch=ia32 --icon=dev/img/logo64.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Brain++\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://StekolschikovVitaly@bitbucket.org/StekolschikovVitaly/brain-plus-plus.git"
+  },
+  "author": "Stekolschikov Vitaly",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "electron-json-storage-sync": "^1.1.0",
+    "electron-reload": "latest",
+    "electron-updater": "^2.9.4"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "electron": "latest",
+    "electron-builder": "^19.29.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "uglify": "^0.1.5",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "build": {
+    "appId": "com.electron.brain-plus-plus",
+    "icon": "img/icon.ico",
+    "compression": "maximum",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  }
+}
